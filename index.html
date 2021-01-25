@@ -11,11 +11,17 @@
 <body>
   <script type="text/javascript" src="script.js"></script>
     <h1 class="header">My Pinboard</h1>
+
     <div class="searchContainer">
       <label class="searchLabel">search</label>
-      <input class="searchInput" />
-      <p class="searchResults"></p>
-      <button class="newCardButton">Add a card</button>
+      <input
+        type="text"
+        id="searchInput"
+        class="searchInput"
+        oninput+"filterTags()"
+      />
+      <p id="searchResult" class="searchResults"></p>
+      <button id="newCardButton" class="newCardButton">Add a card</button>
     </div>
     <div class="cardContainer" id="cardContainer"></div>
   </body>
