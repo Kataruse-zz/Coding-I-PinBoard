@@ -71,3 +71,40 @@ function filterTags () {
   });
   appendData(filteredCards);
 }
+
+var newCardButton = document.getElementById("newCardButton");
+
+var newCardModal = document.getElementById("newCardModal");
+newCardButton.onclick = function () {
+  newCardModal.style.display = "block";
+};
+
+var closeModal = document.getElementsByClassName("close")[0];
+closeModal.onclick = function () {
+  newCardModal.style.display = "none";
+};
+
+window.onclick = function (event) {
+  if (event.target == newCardModal) {
+    newCardModal.style.display = "none";
+  }
+};
+
+function saveNewCard() {
+  var newImgSrc = document.getElementById("imgsrc").value;
+
+  var newTags = document.getElementById("tags").value.split(";");
+
+  var lastCardId = cards[cards.length - 1].id;
+  
+  var newCard = {
+    id: lastCardId + 1,
+    src: newImgSrc,
+    tags: newTags,
+  };
+
+  cards = [...cards, newCard];
+  appendData(cards);
+
+  newCardModal.style.display = "none";
+}

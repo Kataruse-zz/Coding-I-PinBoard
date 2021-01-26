@@ -1,28 +1,59 @@
 <!DOCTYPE html>
 <html>
   <head>
-	  <meta charset="utf-8" />
-	  <meta name="viewport" content="width=device-width" />
-	  <title>My Pinboard</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title>My Moodboard</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-<body>
-  <script type="text/javascript" src="script.js"></script>
-    <h1 class="header">My Pinboard</h1>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" 
+    rel="stylesheet" 
+    />
+    </head>
 
+  <body>
+    <h1 class="header">My Moodboard</h1>
     <div class="searchContainer">
       <label class="searchLabel">search</label>
       <input
         type="text"
         id="searchInput"
         class="searchInput"
-        oninput+"filterTags()"
+        oninput="filterTags()"
       />
-      <p id="searchResult" class="searchResults"></p>
+      <p id="searchResult" class="searchResult"></p>
       <button id="newCardButton" class="newCardButton">Add a card</button>
     </div>
     <div class="cardContainer" id="cardContainer"></div>
+    <div id="newCardModal" class="modal">
+      <div class="modal-content">
+        <!-- the X-button can be achieved by using the "&times;" entity -->
+
+        <span class="close">&times;</span>
+        <form>
+          <label for="imgSrc">Image source</label>
+          <input
+            type="text"
+            id="imgsrc"
+            name="source"
+            class="newCardInput"
+            placeholder="Paste your image url here"
+          />
+          <label for="tags">Tags</label>
+          <input
+            type="text"
+            id="tags"
+            name="tags"
+            class="newCardInput"
+            placeholder="Separate tags with a semicolon ( ; )"
+          />
+
+          <button type="button" class="submitButton" onclick="saveNewCard()">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
