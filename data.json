@@ -29,7 +29,7 @@
     "src": "https://www.cleveland.com/resizer/z428MC36KWa50oQpqlPVp4gsnus=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/PGZXG34PG5E4XKAGGCHWZLDC44.jpg",
     "tags": ["gardening", "nature", "plants", "farm", "garden", "cooking"]
   },
-    {
+  {
     "id": 7,
     "src": "https://i.pinimg.com/originals/a0/7f/32/a07f324fc64ee0ab66a0e6ad028fee72.jpg",
     "tags": ["nature", "trees", "painting", "art", "tutorial"]
@@ -42,6 +42,6 @@
   {
   "id": 9,
   "src": "https://photos.bigoven.com/recipe/hero/thomas-kellers-ratatouille.jpg?h=500&w=500",
-  "tags": ["farm", "food", "video games", "tutorial", "gardening", "farm"]
-  },
+  "tags": ["cooking", "recipe", "food", "meme"]
+  }
 ]
