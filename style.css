@@ -5,15 +5,15 @@ html {
 body {
   width: 80rem;
   margin: 0 auto;
-  background-color: #333399;
+  background-color: #66ccff;
 }
 
 h1 {
   font-size: 4rem;
   text-align: center;
   font-family: "Comfortaa", cursive;
-  color: #000066;
-  text-shadow: 0 0 5px #121254;
+  color: #0033cc;
+  text-shadow: 0 0 5px #000099;
 }
 
 .searchContainer {
@@ -30,7 +30,7 @@ h1 {
 .searchInput {
   height: 2rem;
   width: 25rem;
-  box-shadow: 0 0 5px #000099;
+  box-shadow: 0 0 5px #0066ff;
   font-family: "Montserrat", sans-serif;
   margin: 0 0.2rem;
 }
@@ -61,7 +61,7 @@ img {
 }
 
 .card {
-  background-color: #000099;
+  background-color: #3399ff;
   margin: 0.5rem;
   max-width: 30rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -131,7 +131,7 @@ select {
 /* Style the submit button */
 .submitButton {
   width: 100%;
-  background-color: #fc47bb;
+  background-color: #3399ff;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -142,5 +142,5 @@ select {
 
 /* Add a background color to the submit button on mouse-over */
 .submitButton :hover {
-  background-color: #b92985;
+  background-color: #00ffff;
 }

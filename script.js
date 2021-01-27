@@ -95,6 +95,20 @@ function saveNewCard() {
 
   var newTags = document.getElementById("tags").value.split(";");
 
+  if (newImgSrc == "" && newTags == "") {
+    alert("You must include an image and atleast one tag to create a new post.")
+    return false;
+  } else {
+    if (newImgSrc == "") {
+      alert("You must include an image to create a new post.")
+      return false;
+    }
+    if (newTags =="") {
+      alert("You must include atleast one tag to create a new post.")
+      return false;
+    }
+  }
+
   var lastCardId = cards[cards.length - 1].id;
   
   var newCard = {
