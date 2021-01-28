@@ -23,7 +23,7 @@ h1 {
 
 .searchLabel {
   font-size: 1.2rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Comfortaa", sans-serif;
   margin: 0 0.2rem;
 }
 
@@ -36,11 +36,11 @@ h1 {
 }
 
 .searchResult {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Comfortaa", sans-serif;
 }
 
 .newCardButton {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Comfortaa", sans-serif;
   font-size: large;
   margin: 0 0.2rem;
 }
@@ -74,7 +74,7 @@ img {
 }
 .tagButton {
   text-shadow: 0 0 5px #222277;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Comfortaa", sans-serif;
   font-size: medium;
   margin: 0.5rem;
 }
