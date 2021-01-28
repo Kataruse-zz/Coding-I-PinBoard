@@ -54,16 +54,16 @@ function appendData(data) {
 var card = document.createElement("div");
 card.className = "card";
 
-function filterTags () {
+function filterTags() {
   var searchTerm = document.getElementById("searchInput").value;
-  document.getElementById("searchResult").innerHTML = 
-    "you searched for: " + searchTerm;
+  document.getElementById("searchResult").innerHTML =
+    "You searched for: " + searchTerm;
 
   const searchTermLower = searchTerm.toLowerCase();
 
-  const filterCards = cards.filter((card) => {
+  const filteredCards = cards.filter((card) => {
     return (
-      card.tags.find((tags) => {
+      card.tags.find((tag) => {
         const tagLower = tag.toLowerCase();
         return tagLower.includes(searchTermLower);
       }) !== undefined

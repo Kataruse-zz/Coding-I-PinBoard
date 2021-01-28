@@ -25,7 +25,11 @@
         id="searchInput"
         class="searchInput"
         oninput="filterTags()"
+        spellcheck="true"
+        autocomplete="on"
+        placeholder="Type here to search by tags."
       />
+
       <p id="searchResult" class="searchResult"></p>
       <button id="newCardButton" class="newCardButton">Add a card</button>
     </div>
@@ -50,7 +54,8 @@
             id="desc"
             name="description"
             class="newCardInput"
-            placeholder="Enter a short description"
+            placeholder="Enter a short description of your post"
+            />
           <label for="tags">Tags</label>
           <input
             type="text"
