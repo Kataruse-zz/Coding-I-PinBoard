@@ -35,7 +35,6 @@ function appendData(data) {
 
     var link = document.createElement("a")
     link.className = "link";
-    //link.setAttribute('href',data[i].link);
     if (data[i].link == "") {
       link.innerText = ""
     } else {
