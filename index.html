@@ -1,6 +1,9 @@
-<!-- notes for thursday
-  add description feature
-  add being able to search for multiple tags -->
+<!-- Things to add/fix
+  polish up the description feature
+  add feature to add multiple links
+  add feature to change the text for the link
+  add being able to search for multiple tags 
+  fix the card sizing issue with the desc-->
 
 <!DOCTYPE html>
 <html>
@@ -51,7 +54,7 @@
           <input
             type="text"
             id="desc"
-            name="description"
+            name="text"
             class="newCardInput"
             placeholder="Enter a short description of your post"
             />
@@ -63,6 +66,14 @@
             class="newCardInput"
             placeholder="Separate tags with a semicolon ( ; )"
           />
+          <label for="link">Link</label>
+          <input
+             type="text"
+             id="link"
+             name="link"
+             class="newLink"
+             placeholder="Add a Link"
+            />
 
           <button type="button" class="submitButton" onclick="saveNewCard()">
             Submit
