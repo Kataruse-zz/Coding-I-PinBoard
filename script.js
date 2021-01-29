@@ -25,6 +25,24 @@ function appendData(data) {
     img.src = data[i].src;
     card.appendChild(img);
 
+    var desc = document.createElement("h3")
+    desc.className = "desc";
+    desc.innerText = data[i].desc;
+    if (desc.innerText == "undefined") {
+      desc.innerText = ""
+    }
+    card.appendChild(desc);
+
+    var link = document.createElement("a")
+    link.className = "link";
+    if (data[i].link == "") {
+      link.innerText = ""
+    } else {
+      link.innerText = "Link"
+    }
+    link.setAttribute('href',data[i].link);
+    card.appendChild(link)
+
     var tagContainer = document.createElement("div");
     tagContainer.className = "tagContainer";
     card.appendChild(tagContainer);
@@ -93,6 +111,10 @@ window.onclick = function (event) {
 function saveNewCard() {
   var newImgSrc = document.getElementById("imgsrc").value;
 
+  var newDesc = document.getElementById("desc").value;
+
+  var newLink = document.getElementById("link").value;
+
   var newTags = document.getElementById("tags").value.split(";");
 
   if (newImgSrc == "" && newTags == "") {
@@ -114,11 +136,16 @@ function saveNewCard() {
   var newCard = {
     id: lastCardId + 1,
     src: newImgSrc,
+    desc: newDesc,
     tags: newTags,
+    link: newLink,
   };
 
   cards = [...cards, newCard];
   appendData(cards);
 
   newCardModal.style.display = "none";
+
+console.log (cards);
+
 }
