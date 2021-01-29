@@ -144,3 +144,13 @@ select {
 .submitButton :hover {
   background-color: #00ffff;
 }
+
+h3 {
+  font-family: "Comfortaa", sans-serif;
+  background-color: #1a75ff;
+  max-width: 25rem;
+}
+
+a {
+  font-family: "Comfortaa", sans-serif;
+}

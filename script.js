@@ -73,7 +73,8 @@ var card = document.createElement("div");
 card.className = "card";
 
 function filterTags() {
-  var searchTerm = document.getElementById("searchInput").value;
+  var searchTerm = document.getElementById("searchInput").value;  
+
   document.getElementById("searchResult").innerHTML =
     "You searched for: " + searchTerm;
 
@@ -147,5 +148,12 @@ function saveNewCard() {
   newCardModal.style.display = "none";
 
 console.log (cards);
+
+document.getElementById('searchResult').onsubmit = function () {
+  var fields = ["searchInput"];
+  var inputs = document.getElementById('searchInput').value;
+  var values = input.split(',');
+
+}
 
 }
